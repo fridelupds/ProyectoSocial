@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #8675a2;
+}
+main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    .video{
+        .video__play{
+            z-index: -5;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+    }
+    .logoArriba{
+        text-align: center;
+    }
+    .medio{
+        text-align: center;
+        width: 100%;
+        margin: 8% 0;
+        visibility: hidden;
+    }
+    .logoAbajo{
+        text-align: right;
+        #logo2{
+            padding-top: 10%;
+        }
+    }
+}
