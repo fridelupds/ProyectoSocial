@@ -154,44 +154,7 @@ footer{
     flex-direction: column;
     gap:10px;
 
-}
-.instagram{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #ABCACF;
-    border-radius: 5%;
-    background-color: #8675A2;
-}
-.instagram_img{
-    width: 30%;
-}
-.instagram_txt{
-    text-decoration: none;
-    font-size: 100%;
-    font-family: 'Sansita', sans-serif;
-    color: white;
-}
-.twitter{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #ABCACF;
-    border-radius: 5%;
-    background-color: #8675A2;
-
-}
-.twiter_img{
-    width: 25%;
-}
-.twiter_txt{
-    
-    font-size: 100%;
-    font-family: 'Sansita', sans-serif;
-    color: white;
-    text-decoration: none;
-}
-.cuerpo_redessociales_derecha{
+}uerpo_redessociales_derecha{
     width: 30%;
     display: flex;
     flex-direction: column;
