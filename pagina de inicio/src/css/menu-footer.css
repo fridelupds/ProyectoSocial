@@ -1,0 +1,114 @@
+
+.header{
+    width: 100%;
+    background-color: #8675a2;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.header__menu{
+    top: 0;
+    position: sticky;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    background-color: #e5bad8;
+    @media (max-width: 800px){
+        display: none;
+    }
+    .menu__opcionesHome{
+        padding: 0;
+        background-color: #ABCACF;
+        text-align: center;
+        margin: auto 0;
+        .menu__opcionesHomeImg{
+            width: 41px;
+            height: 41px;
+            object-fit: cover;
+        }
+    }
+    .menu__opciones{
+        font-weight: bold;
+        background-color: #efeef3;
+        color: #000;
+        text-align: center;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        height: 100%;
+        text-decoration: none;
+        font-size: 20px;
+        border-left: 1px solid #e5bad8;
+    }
+    .borde1{
+        border-top: 5px solid #e5bad8;
+    }
+    .borde2{
+        border-top: 5px solid #9cd4dd;
+    }
+}
+.header__menu2{
+    top: 0;
+    position: sticky;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    background-color: #e5bad8;
+    @media (min-width: 800px){
+        display: none;
+    }
+    .btn{
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        margin-right: 100px;
+        border: none;
+    }
+    .menu__opcionesHome{
+        padding: 0;
+        background-color: #ABCACF;
+        text-align: center;
+        margin: auto 0;
+        .menu__opcionesHomeImg{
+            width: 41px;
+            height: 41px;
+            object-fit: cover;
+        }
+    }
+    .dropdown-menu{
+        background-color: #e5bad8;
+        position: relative;
+        z-index: 5;
+    }
+    .menu__opciones{
+        font-weight: bold;
+        background-color: #efeef3;
+        color: #000;
+        text-align: center;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        height: 100%;
+        text-decoration: none;
+        font-size: 20px;
+        border-left: 1px solid #e5bad8;
+    }
+    & a{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .borde1{
+        background-color: #e5bad8;
+    }
+    .borde2{
+        background-color: #9cd4dd;
+    }
+}
+footer{
+    color: #fff;
+    background-color: #77B1BA;
+    .footer__texto{
+        text-align: center;
+        font-size: 17px;
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+}
