@@ -1,0 +1,26 @@
+body{
+    animation: transicion 1s;
+}
+@keyframes transicion{
+    from{
+        opacity: 0;
+        transform: rotateY(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
+
+.card1:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+    .text{
+        transition: 0.5s;
+
+        background-color: rgb(66, 3, 107);
+    }
+}
+.card1 {
+    transition: 0.5s;
+}
