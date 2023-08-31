@@ -1,0 +1,14 @@
+body{
+    animation: transicion 1s;
+}
+@keyframes transicion{
+    from{
+        opacity: 0;
+        transform: rotateY(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
+
