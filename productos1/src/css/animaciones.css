@@ -1,0 +1,34 @@
+body{
+    animation: transicion 1s;
+}
+@keyframes transicion{
+    from{
+        opacity: 0;
+        transform: rotateY(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
+
+
+
+.imagenes_final:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+.imagenes_final {
+    transition: 0.5s;
+}
+
+.divimg1:hover, .divimg2:hover,.divimg3:hover,.divimg4:hover,.divimg5:hover,.divimg6:hover,.divimg7:hover,.divimg8:hover,.divimg9:hover,.divimg10:hover,.divimg101:hover,.divimg12:hover,.divimg13:hover,.divimg14:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+    background-color: rgb(66, 3, 107);
+}
+.divimg1, .divimg2,.divimg3,.divimg4,.divimg5,.divimg6,.divimg7,.divimg8,.divimg9,.divimg10,.divimg101,.divimg12,.divimg13,.divimg14{
+    transition: 0.5s;
+}
+
+
