@@ -1,0 +1,29 @@
+body{
+    animation: transicion 1s;
+}
+@keyframes transicion{
+    from{
+        opacity: 0;
+        transform: rotateY(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
+.imagen1:hover, .imagen2:hover, .imagen3:hover,.imagen4:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+.imagen1,.imagen2,.imagen3,.imagen4 {
+    transition: 0.5s;
+}
+
+.img__logo:hover{
+    -webkit-transform:scale(1.5);
+    transform:scale(1.5);
+
+}
+.img__logo {
+    transition: 1s;
+}
