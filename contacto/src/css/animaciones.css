@@ -1,0 +1,43 @@
+body{
+    animation: transicion 1s;
+}
+@keyframes transicion{
+    from{
+        opacity: 0;
+        transform: rotateY(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
+
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+  }
+  .facebook:hover{
+    animation: horizontal-shaking 0.35s infinite;
+}
+ .whatsap{
+    animation: horizontal-shaking 0.35s infinite;
+ }
+
+.imagenes_final:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+.imagenes_final {
+    transition: 0.5s;
+}
+.redes_etiqueta_imagen1:hover, .texto_etiqueta_img1:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+.redes_etiqueta_imagen1, .texto_etiqueta_img1 {
+    transition: 0.5s;
+}
+
