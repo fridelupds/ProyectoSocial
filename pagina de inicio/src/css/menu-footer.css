@@ -32,6 +32,7 @@
         background-color: #efeef3;
         color: #000;
         text-align: center;
+        position: relative;
         padding-top: 3px;
         padding-bottom: 3px;
         height: 100%;
@@ -45,6 +46,20 @@
     .borde2{
         border-top: 5px solid #9cd4dd;
     }
+}
+.menu__opciones:hover::before, .menu__opciones:focus::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 4px;
+    background-color: #ff5722;
+    transition: bottom 0.5s ease, background-color 0.5s ease;
+}
+.menu__opciones:focus::before{
+    bottom: 100%;
+    background-color: #e91e63;
 }
 .header__menu2{
     top: 0;
