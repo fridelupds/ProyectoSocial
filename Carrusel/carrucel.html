@@ -1,52 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Carrusel</title>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="src/css/style.css">
-  </head>
-  <body>
-      <header>
-          <nav class="header">
-            <img class="header__logo1" src="src/img-1/Imagen2 1.png" alt="Logo">
-            <img class="header__logo2" src="src/img-1/LOGO2.png" alt="frase">
-            <img class="header__logo3" src="src/img-1/LOGO3 2.png" alt="producto">
-          </nav>
-          <nav class="header__menu">
-            <a class="menu__opcionesHome__col-1" href="#">
-                <img class="menu__opcionesHomeImg" src="src/img-1/🦆 icon _home_.png" alt="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+      <nav class="header">
+        <img class="header__logo1" src="src/img-1/Imagen2 1.png" alt="Logo">
+        <img class="header__logo2" src="src/img-1/LOGO2.png" alt="frase">
+        <img class="header__logo3" src="src/img-1/LOGO3 2.png" alt="producto">
+      </nav>
+      <nav class="header__menu">
+        <a class="menu__opcionesHome__col-1" href="#">
+            <img class="menu__opcionesHomeImg" src="src/img-1/🦆 icon _home_.png" alt="">
+        </a>
+        <a class="menu__opciones__borde1__col-2" href="#">Inicio</a>
+        <a class="menu__opciones__borde2__col-4" href="#">Nuestros Productos</a>
+        <a class="menu__opciones__borde1__col-3" href="#">Sobre Nosotros</a>
+        <a class="menu__opciones__borde2__col-2" href="#">Contactanos</a>
+      </nav>
+    </header>
+      <article>
+        <div class="boton_de_retorno"> 
+          <h2>pagina anterior</h2>
+        </div>
+        <div class="titulo">
+          <h1>Collar de gargantilla</h1>
+        </div>
+        <div class="descripcion">
+          <div class="titulo_descripcion"><h1>Descripcion:</h1></div>
+          <div class="descripcion1"><h1>Elegante collar bordado con acesorios decorativos y una hermosa joya estilo cristal.</h1></div>
+        </div>
+        <div class="container">
+          <div id="theCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+              <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#theCarousel" data-slide-to="1"></li>
+              <li data-target="#theCarousel" data-slide-to="2"></li>
+              <li data-target="#theCarousel" data-slide-to="3"></li>
+              <li data-target="#theCarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="src/img-1/img-1.jpg" alt="Ilustracion" > 
+                 <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="item">
+                  <img src="src/img-1/img-2.jpg" alt="fotografia" > 
+                 <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+             <div class="item">
+                <img src="src/img-1/img-3.jpg" alt="pintura" >
+                 <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="item">
+                  <img src="src/img-1/img-4.jpg" alt="diseno" > 
+                  <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+
+            <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">anterior</span>
             </a>
-            <a class="menu__opciones__borde1__col-2" href="#">Inicio</a>
-            <a class="menu__opciones__borde2__col-4" href="#">Nuestros Productos</a>
-            <a class="menu__opciones__borde1__col-3" href="#">Sobre Nosotros</a>
-            <a class="menu__opciones__borde2__col-2" href="#">Contactanos</a>
-          </nav>
-      </header>
-      <section>
-        <article>
-          <div class="boton_de_retorno"> 
-            <h2>pagina anterior</h2>
+            <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">siguiente</span>
+            </a>
           </div>
-          <div class="titulo">
-            <h1>Collar de gargantilla</h1>
-          </div>
-          <div class="container">
-            <img src="src/img-1/img-3.jpg" alt="#">
-          </div>
-          <div class="descripcion">
-            <div class="titulo_descripcion"><h1>Descripcion:</h1></div>
-            <div class="descripcion1"><h1>Elegante collar bordado con acesorios decorativos y una hermosa joya estilo cristal.</h1></div>
-          </div>
-        </article>
-      </section>
-      <footer>
-        <nav class="footer">
-          <h3 class="footer-texto">© 2023 - Fundacion Mujeres en Accion. Desarrollado por Alumnos de la Materia de Diseño Web UPDS Tarija</h3>
-        </nav>
-      </footer>
-  </body>
+        </div>
+      </article>
+    </section>
+    <footer>
+      <nav class="footer">
+        <h3 class="footer-texto">© 2023 - Fundacion Mujeres en Accion. Desarrollado por Alumnos de la Materia de Diseño Web UPDS Tarija</h3>
+      </nav>
+    </footer>
+</body>
 </html>

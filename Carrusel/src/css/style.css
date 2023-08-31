@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&family=Qwitcher+Grypen:wght@700&display=swap');  
-body, html {
+*{
     margin: 0;
-    height: 100%;
-    overflow-y: fixed;
-    background-color: rgb(210, 176, 200);
+    padding: 0;
+}
+#body{
+    background-color: #FCF9EB;
+    margin: 0;
+    padding: 0;
 }
 .header{
     display: flex;
@@ -81,18 +84,6 @@ body, html {
     padding-right: 43px;
     padding-left: 43px;
 }
-.titulo{
-    display: flex;
-    position: relative;
-    left: 20%;
-    top: 100px;
-    color: rgb(138, 122, 167)
-}
-.titulo h1{
-    font-family: 'Kaisei HarunoUmi', serif;
-    font-family: 'Qwitcher Grypen', cursive;
-    font-size: 150px;
-}
 .boton_de_retorno{
     display: flex;
     position: relative;
@@ -110,18 +101,40 @@ body, html {
     align-items: center;
     justify-content: center; 
 }
-.container{
+.titulo{
     display: flex;
     position: relative;
-    top: 140px;
-    left: 100px;
-    width: 500px;
-    height: 500px;
+    left: 0px;
+    top: 100px;
+    color: rgb(138, 122, 167);
+    align-items: center;
+    justify-content: center;
+}
+.titulo::before,
+  .titulo::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, rgb(185, 185, 185) 20px, rgb(255, 255, 255) 20px);
+    background-size: 40px 100%;
+  }
+  .titulo::before {
+    top: 0;
+  }
+  
+  .titulo::after {
+    bottom: 0;
+  }
+.titulo h1{
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 150px;
 }
 .descripcion{
     position: relative;
     left: 20%;
-    top: 180px;
+    top: 1400px;
     background-color: rgb(134, 117, 162);
     color: white;
     width: 60%;
@@ -144,7 +157,7 @@ body, html {
 .footer{
     position: absolute;
     left: 0px;
-    bottom: -90%;
+    bottom: -160%;
     width: 100%;
     height: 10%;
     background-color: rgb(119, 178, 186);
@@ -155,12 +168,68 @@ body, html {
     justify-content: center; 
     color: white;
 }
-
-
-
-
-    
-
-
-  
-
+.sectionImage{
+    padding: 15px 8px;
+    background-color: #9cd4dd;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "n1 n2 n4 n5"
+    "n1 n3 n4 n6";
+    gap: 12px;
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 13px;
+        border: 8px solid #fff;
+    }
+    #img1{
+        grid-area: n1;
+    }
+    #img2{
+        grid-area: n2;
+    }
+    #img3{
+        grid-area: n3;
+    }
+    #img4{
+        grid-area: n4;
+    }
+    #img5{
+        grid-area: n5;
+    }
+    #img6{
+        grid-area: n6;
+    }
+}
+.carousel-inner{
+    z-index: -10;
+    width: 10%;
+    height: 10%;
+    .imgC{
+        width: 50px;
+        margin:  50px;
+    }
+}
+#carouselExampleIndicators{
+    width: 100%;
+    height: 100%;
+}
+#optionCarrusel{
+    width: 100%;
+    height: 100px;
+    background-color: #e5bad8;
+    position: relative;
+}
+footer{
+    color: #fff;
+    background-color: #77B1BA;
+    .footer__texto{
+        text-align: center;
+        font-size: 17px;
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+}
